@@ -17,7 +17,7 @@ on:
 jobs:
   check-identity:
     # Skip running in forked repos, since it would fail anyway:
-    if: ${{ github.repository == 'tiiuae/ghaf-fmo-laptop' }}
+    #if: ${{ github.repository == 'tiiuae/ghaf-fmo-laptop' }}
     runs-on: ubuntu-latest
     outputs:
       authorized_user: ${{ steps.check-authorized-user.outputs.authorized_user }}
